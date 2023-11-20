@@ -75,7 +75,13 @@ async fn Blocks<G: Html>(props: BlocksProps) -> View<G> {
                 Keyed(
                     iterable=props.blocks,
                     view=|x| view! {
-                        tr{td { (x) }}
+                        tr {
+                            td {
+                                a(href=format!("/block/{x}")) {
+                                    (x)
+                                }
+                            }
+                        }
                     },
                     key=|x| *x,
                 )
