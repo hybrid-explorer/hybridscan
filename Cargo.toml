@@ -7,6 +7,6 @@ edition = "2021"
 
 [dependencies]
 hex = "0.4.3"
-subxt = { version = "0.32.1", features = ["web", "jsonrpsee"], default-features = false }
+subxt = { version = "0.33", features = ["web", "jsonrpsee"], default-features = false }
 sycamore = { git = "https://github.com/sycamore-rs/sycamore", features = ["suspense", "nightly"] }
 sycamore-router = { git = "https://github.com/sycamore-rs/sycamore" }
